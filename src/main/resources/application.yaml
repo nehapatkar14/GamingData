@@ -1,0 +1,20 @@
+server:
+  port: 8092
+  
+spring:
+  application:
+    name: DATA-SERVICE
+  datasource:
+    url: jdbc:sqlserver://localhost:1433;databaseName=BettingData;encrypt=true;trustServerCertificate=true;
+    username: sa
+    password: Subhash_9657723827
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.SQLServer2012Dialect
+
+
